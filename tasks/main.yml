@@ -1,0 +1,15 @@
+---
+- name: install OXID via oxrun
+  command: "{{ oxid_oxrun_path }} install:shop
+    --oxidVersion={{ oxid_version }}
+    --installationFolder={{ oxid_install_path }}
+    --dbHost={{ oxid_db_host }}
+    --dbUser={{ oxid_db_user }}
+    --dbPwd={{ oxid_db_password }}
+    --dbName={{ oxid_db_name }}
+    --dbPort={{ oxid_db_port }}
+    --shopURL={{ oxid_base_url }}
+    --adminUser={{ oxid_admin_user }}
+    --adminPassword={{ oxid_admin_password }}"
+  args:
+    creates: "{{ oxid_install_path }}/config.inc.php"

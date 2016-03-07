@@ -1,0 +1,13 @@
+---
+oxid_db_host: "localhost"
+oxid_db_user: "root"
+oxid_db_password: "root"
+oxid_db_name: "oxid_ce"
+oxid_db_port: "3306"
+oxid_install_sample_data: true
+oxid_version: "v4.9.7"
+oxid_install_path: "/var/www/oxid"
+oxid_base_url: "http://oxid.dev/"
+oxid_oxrun_path: "/usr/local/bin/oxrun"
+oxid_admin_user: admin@example.com
+oxid_admin_password: password
